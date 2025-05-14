@@ -1,11 +1,11 @@
 # plmc_pruned
-**This repository is based on code originally published under an MIT License by dpxiong (https://github.com/dpxiong/PLMC). This version is provided as-is with no endorsement of the original implementation or associated claims.**
+This repository is based on code originally published under an MIT License by dpxiong (https://github.com/dpxiong/PLMC). This version is provided as-is with **no endorsement of the original implementation or associated claims**.
 
-## PLMC modifications
+## PLMC modification
 PLMC is a deep learning framework for protein crystallization prediction with protein language embeddings and handcrafted features. This code provides a version of PLMC that doesn't use protein language embeddings (for various reasons).
 
 ### Creating a conda environment
-After cloning the repository, please run the following lines to install an environment for PLMC.
+After cloning the repository, please run the following lines to install an environment for PLMC
 ```
 conda create -n plmc_pruned python=3.9
 conda activate plmc_pruned
