@@ -23,5 +23,5 @@ Execute the following command:
 python main.py --rawpath ./data/CRYS_DS
 ```
 
-## Predicting crystallization outcome of your own protein:
+### Predicting crystallization outcome of your own protein:
 **Is not possible (with neither this nor the original tool).**
