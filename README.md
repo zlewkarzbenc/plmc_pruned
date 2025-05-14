@@ -1,5 +1,5 @@
 # plmc_pruned
-*This repository is based on code originally published under an MIT License by dpxiong (https://github.com/dpxiong/PLMC). This version is provided as-is with no endorsement of the original implementation or associated claims.*
+**This repository is based on code originally published under an MIT License by dpxiong (https://github.com/dpxiong/PLMC). This version is provided as-is with no endorsement of the original implementation or associated claims.**
 
 ## PLMC modifications
 PLMC is a deep learning framework for protein crystallization prediction with protein language embeddings and handcrafted features. This code provides a version of PLMC that doesn't use protein language embeddings (for various reasons).
