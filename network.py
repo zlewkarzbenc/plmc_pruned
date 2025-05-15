@@ -40,13 +40,13 @@ class PLMC(nn.Module):
     def forward(self, protein_hf, device):
 
         p_feature2 = self.feat2_embed(protein_hf.to(torch.float32)) 
-        p_feature2 = F.relu(self.protein_hf_bn(self.protein_hf_layer(p_feature2)), inplace=True)  
+        p_feature2 = F.relu(self.protein_hf_bn(self.protein_hf_layer(p_feature2)))  
         p_feature2 = F.dropout(p_feature2, training=self.training, p=self.dropout)
         p_feature2 = self.protein_hf_layer_1(p_feature2) 
 
         p_feature = p_feature2 # (o_O)
 
-        p_feature = F.relu(self.total_bn(self.total_layer(p_feature)), inplace=True)
+        p_feature = F.relu(self.total_bn(self.total_layer(p_feature)))
         p_feature = F.dropout(p_feature, training=self.training, p=self.dropout)
         p_feature = self.total_layer_1(p_feature)
         
