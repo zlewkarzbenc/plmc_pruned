@@ -4,8 +4,8 @@ library(foreach)
 
 args = commandArgs(trailingOnly=TRUE)
 
-# processes <- 4
-processes <- 32
+processes <- 4
+
 registerDoParallel(processes)
 source('PaRSnIP_v2.R')
 
